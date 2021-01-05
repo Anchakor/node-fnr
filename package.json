@@ -1,6 +1,6 @@
 {
     "name": "node-fnr",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "Format-preserving encryption (FPE), small cipher (< 128 bits), for anonymization.",
     "dependencies": {
         "node-addon-api": "^3.1.0"

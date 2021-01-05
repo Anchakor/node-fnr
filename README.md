@@ -23,8 +23,7 @@ Tested on Linux. Shouldn't be hard to make work on other platforms (PRs welcome)
 ## Usage
 
 ```ts
-// const Fnr = require('node-fnr');
-import Fnr from 'node-fnr';
+const Fnr = require('node-fnr');
 
 const data_bitsize = 16; // ... other variables
 const fnr = new Fnr(data_bitsize, passwd_bitsize, tweak_bytesize);
@@ -40,6 +39,8 @@ fnr.encrypt(data, passwd, tweak_str, input.length);
 // now `data` is encrypted, read it with data.readUInt16BE()
 // decrypt method has the same signature
 ```
+
+See also [the test code](test/test_binding.js).
 
 ## Development
 
