@@ -10,6 +10,8 @@ Useful for data anonymization.
 
 See [Format-preserving encryption](https://en.wikipedia.org/wiki/Format-preserving_encryption).
 
+[![NPM](https://nodei.co/npm/node-fnr.png)](https://nodei.co/npm/node-fnr/)
+
 ## Installation
 
 Requires C library `libfrn`, which in turn requires `openssl` > 1.0.1e (installed in the system as dynamic shared libraries).
