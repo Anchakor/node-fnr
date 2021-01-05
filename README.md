@@ -14,22 +14,15 @@ See [Format-preserving encryption](https://en.wikipedia.org/wiki/Format-preservi
 
 Requires C library `libfrn`, which in turn requires `openssl` > 1.0.1e (installed in the system as dynamic shared libraries).
 
-```
-npm install
-```
-
-Verify installation:
-
-```
-npm link typescript # linking global typescript
-npm run test
+```sh
+npm install node-fnr
 ```
 
 Tested on Linux. Shouldn't be hard to make work on other platforms (PRs welcome).
 
 ## Usage
 
-```
+```ts
 const data_bitsize = 16; // ... other variables
 const fnr = new Fnr(data_bitsize, passwd_bitsize, tweak_bytesize);
 
@@ -47,15 +40,21 @@ fnr.encrypt(data, passwd, tweak_str, input.length);
 
 ## Development
 
+```sh
+npm install # building
+npm link typescript # linking global typescript
+npm run test
+```
+
 Updating dependencies. Use:
 
-```
+```sh
 npm outdated
 ```
 
 Possibly update package.json for major upgrades, then run:
 
-```
+```sh
 rm node_modules/typescript; npm update; npm install; npm link typescript
 npm run test
 ```
