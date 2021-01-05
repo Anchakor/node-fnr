@@ -1,0 +1,32 @@
+{
+    "name": "node-fnr",
+    "version": "1.0.0",
+    "description": "Format-preserving encryption (FPE), small cipher (< 128 bits), for anonymization.",
+    "dependencies": {
+        "node-addon-api": "^3.1.0"
+    },
+    "devDependencies": {
+        "@types/node": "^14.14.20"
+    },
+    "scripts": {
+        "pretest": "tsc",
+        "test": "node --napi-modules ./test/test_binding.js"
+    },
+    "main": "lib/binding.js",
+    "gypfile": true,
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Anchakor/node-fnr.git"
+    },
+    "keywords": [
+        "FPE",
+        "encryption",
+        "cipher"
+    ],
+    "author": "Jiří Procházka",
+    "license": "LGPL-2.1-or-later",
+    "bugs": {
+        "url": "https://github.com/Anchakor/node-fnr/issues"
+    },
+    "homepage": "https://github.com/Anchakor/node-fnr#readme"
+}
