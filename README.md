@@ -23,6 +23,9 @@ Tested on Linux. Shouldn't be hard to make work on other platforms (PRs welcome)
 ## Usage
 
 ```ts
+// const Fnr = require('node-fnr');
+import Fnr from 'node-fnr';
+
 const data_bitsize = 16; // ... other variables
 const fnr = new Fnr(data_bitsize, passwd_bitsize, tweak_bytesize);
 

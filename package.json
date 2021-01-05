@@ -12,7 +12,7 @@
         "pretest": "tsc",
         "test": "node --napi-modules ./test/test_binding.js"
     },
-    "main": "lib/binding.js",
+    "main": "dist/binding.js",
     "gypfile": true,
     "repository": {
         "type": "git",
